@@ -4,6 +4,7 @@ This file provides quick instructions to set up, build, and run the project.
 
 ## Architecture
 
+```Markdown
 Modeling_iPhone/
 ├─ .gitignore
 ├─ LICENSE
@@ -31,6 +32,7 @@ Modeling_iPhone/
                      ├─ Contact.java
                      ├─ Favorite.java
                      └─ Playlist.java
+```
 
 ## Repository layout
 
