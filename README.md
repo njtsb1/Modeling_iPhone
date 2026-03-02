@@ -21,25 +21,33 @@ Modeling_iPhone/
 ├─ pom.xml
 ├─ docs/
 │  └─ diagram.png
+├─ .vscode/
+│  └─ settings.json
 └─ src/
-   └─ main/
+   ├─ main/
+   │  └─ java/
+   │     └─ com/
+   │        └─ example/
+   │           └─ iphone/
+   │              ├─ Main.java
+   │              ├─ interfaces/
+   │              │  ├─ IMusicPlayer.java
+   │              │  ├─ IPhoneDevice.java
+   │              │  └─ IInternetBrowser.java
+   │              ├─ devices/
+   │              │  ├─ Smartphone.java
+   │              │  └─ iPhone.java
+   │              └─ model/
+   │                 ├─ Song.java
+   │                 ├─ Contact.java
+   │                 ├─ Favorite.java
+   │                 └─ Playlist.java
+   └─ test/
       └─ java/
          └─ com/
             └─ example/
                └─ iphone/
-                  ├─ Main.java
-                  ├─ interfaces/
-                  │  ├─ IMusicPlayer.java
-                  │  ├─ IPhoneDevice.java
-                  │  └─ IInternetBrowser.java
-                  ├─ devices/
-                  │  ├─ Smartphone.java
-                  │  └─ iPhone.java
-                  └─ model/
-                     ├─ Song.java
-                     ├─ Contact.java
-                     ├─ Favorite.java
-                     └─ Playlist.java
+                  └─ iPhoneTest.java
 ```
 
 ## Repository layout
@@ -48,7 +56,7 @@ Modeling_iPhone/
 - `src/main/java/com/example/iphone/devices` — device classes (Smartphone, iPhone).
 - `src/main/java/com/example/iphone/model` — model classes (Music, Contact, Favorite, Playlist).
 - `src/main/java/com/example/iphone/Main.java` — demonstration entry point.
-- `docs/diagram.png` — UML diagram (optional).
+- `docs/diagram.png` — UML diagram.
 
 ## Prerequisites
 
@@ -58,10 +66,25 @@ Modeling_iPhone/
 ## Build steps
 
 1. Open a terminal at the project root.
-2. Run:
+2. Quick Start:
 
 ```bash
 mvn clean package
+```
+## Run example
+
+After building, run the demo Main class:
+
+```bash
+java -cp target/iphone-uml-1.0.0.jar com.example.iphone.Main
+```
+
+## Tests
+
+This project includes basic unit test examples. To run tests:
+
+```bash
+mvn test
 ```
 
 [LICENSE](/LICENSE)
