@@ -13,25 +13,33 @@ Modeling_iPhone/
 ├─ pom.xml
 ├─ docs/
 │  └─ diagram.png
+├─ .vscode/
+│  └─ settings.json
 └─ src/
-   └─ main/
+   ├─ main/
+   │  └─ java/
+   │     └─ com/
+   │        └─ example/
+   │           └─ iphone/
+   │              ├─ Main.java
+   │              ├─ interfaces/
+   │              │  ├─ IMusicPlayer.java
+   │              │  ├─ IPhoneDevice.java
+   │              │  └─ IInternetBrowser.java
+   │              ├─ devices/
+   │              │  ├─ Smartphone.java
+   │              │  └─ iPhone.java
+   │              └─ model/
+   │                 ├─ Song.java
+   │                 ├─ Contact.java
+   │                 ├─ Favorite.java
+   │                 └─ Playlist.java
+   └─ test/
       └─ java/
          └─ com/
             └─ example/
                └─ iphone/
-                  ├─ Main.java
-                  ├─ interfaces/
-                  │  ├─ IMusicPlayer.java
-                  │  ├─ IPhoneDevice.java
-                  │  └─ IInternetBrowser.java
-                  ├─ devices/
-                  │  ├─ Smartphone.java
-                  │  └─ iPhone.java
-                  └─ model/
-                     ├─ Song.java
-                     ├─ Contact.java
-                     ├─ Favorite.java
-                     └─ Playlist.java
+                  └─ iPhoneTest.java
 ```
 
 ## Repository layout
