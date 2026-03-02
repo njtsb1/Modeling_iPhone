@@ -62,5 +62,6 @@ Modeling_iPhone/
 
 ```bash
 mvn clean package
+```
 
 [LICENSE](/LICENSE)
